@@ -1,0 +1,6 @@
+dependencies:
+  bundler:
+    without: [integration]
+test:
+  override:
+    - bundle exec foodcritic . -X test -f any
