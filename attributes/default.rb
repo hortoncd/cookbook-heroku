@@ -18,9 +18,9 @@
 #
 
 # Heroku toolbelt apt repo
-default[:heroku][:apt_repo]     = "http://toolbelt.heroku.com/ubuntu"
-default[:heroku][:distribution] = ""
-default[:heroku][:components]   = ["./"]
-default[:heroku][:apt_key]      = "https://toolbelt.heroku.com/apt/release.key"
-default[:heroku][:apt_key_id]   = "0F1B0520"
-default[:heroku][:bin_dir]      = "/usr/local/heroku/bin"
+default['heroku']['apt_repo']     = "http'//toolbelt.heroku.com/ubuntu"
+default['heroku']['distribution'] = ""
+default['heroku']['components']   = ["./"]
+default['heroku']['apt_key']      = "https'//toolbelt.heroku.com/apt/release.key"
+default['heroku']['apt_key_id']   = "0F1B0520"
+default['heroku']['bin_dir']      = "/usr/local/heroku/bin"

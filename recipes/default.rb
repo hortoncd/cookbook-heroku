@@ -19,14 +19,14 @@
 
 # use the apt cookbook to setup repo
 apt_repository "heroku" do
-  uri          node[:heroku][:apt_repo]
-  key          node[:heroku][:apt_key]
-  components   node[:heroku][:components]
-  distribution node[:heroku][:distribution]
+  uri          node['heroku']['apt_repo']
+  key          node['heroku']['apt_key']
+  components   node['heroku']['components']
+  distribution node['heroku']['distribution']
 end
 
 package "heroku-toolbelt"
 
 file "/etc/profile.d/heroku.sh" do
-  content "PATH=$PATH:#{node[:heroku][:bin_dir]}"
+  content "PATH=$PATH:#{node['heroku']['bin_dir']}"
 end
