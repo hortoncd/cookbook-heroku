@@ -1,31 +1,4 @@
-heroku_test Cookbook
-====================
-This cookbook is for testing the heroku_test cookbook.
-
-Requirements
-------------
-
-## Platform
-
-* Ubuntu (10.04+)
-* Debian (7.1.0+)
-
-## Cookbooks
-
-* `heroku_test`
-
-Attributes
-----------
-
-Usage
------
-#### heroku_test::default
-Test the install of heroku toolbelt package
-
-License and Authors
--------------------
-Authors: Chris Horton
-Copyright:: 2013 - 2014, Chris Horton
+Copyright 2014 - 2017, Chris Horton
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

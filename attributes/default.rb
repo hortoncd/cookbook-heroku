@@ -2,7 +2,7 @@
 # Cookbook Name:: heroku
 # Attributes:: default
 #
-# Copyright 2013 - 2014, Chris Horton
+# Copyright 2013 - 2017, Chris Horton
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,9 +18,9 @@
 #
 
 # Heroku toolbelt apt repo
-default['heroku']['apt_repo']     = "http'//toolbelt.heroku.com/ubuntu"
-default['heroku']['distribution'] = ""
-default['heroku']['components']   = ["./"]
-default['heroku']['apt_key']      = "https'//toolbelt.heroku.com/apt/release.key"
-default['heroku']['apt_key_id']   = "0F1B0520"
-default['heroku']['bin_dir']      = "/usr/local/heroku/bin"
+default['heroku']['apt_repo']     = 'https://cli-assets.heroku.com/branches/stable/apt'
+default['heroku']['distribution'] = ''
+default['heroku']['components']   = ['./']
+default['heroku']['apt_key']      = 'https://toolbelt.heroku.com/apt/release.key'
+default['heroku']['apt_key_id']   = '0F1B0520'
+default['heroku']['bin_dir']      = '/usr/bin/heroku'

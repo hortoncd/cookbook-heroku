@@ -2,7 +2,7 @@
 # Cookbook Name:: heroku
 # Recipe:: default
 #
-# Copyright 2013 - 2014, Chris Horton
+# Copyright 2013 - 2017, Chris Horton
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,15 +18,15 @@
 #
 
 # use the apt cookbook to setup repo
-apt_repository "heroku" do
+apt_repository 'heroku' do
   uri          node['heroku']['apt_repo']
   key          node['heroku']['apt_key']
   components   node['heroku']['components']
   distribution node['heroku']['distribution']
 end
 
-package "heroku-toolbelt"
+package 'heroku'
 
-file "/etc/profile.d/heroku.sh" do
+file '/etc/profile.d/heroku.sh' do
   content "PATH=$PATH:#{node['heroku']['bin_dir']}"
 end
