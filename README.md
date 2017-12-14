@@ -13,7 +13,7 @@ Requirements
 
 ## Platform
 
-* Ubuntu (10.04+)
+* Ubuntu (14.04+)
 * Debian (7.1.0+)
 
 ## Cookbooks
@@ -53,7 +53,7 @@ Recipes
 ## default
 
 Sets up heroku-toolbelt from the heroku apt repo instead of the
-`install.sh` method that is inexplicably recommended by the heroku 
+`install.sh` method that is inexplicably recommended by the heroku
 webpage even though all it does is setup the apt config.  (Seriously,
 how did this crap take over from straightforward package installs in so
 many places?)
@@ -64,7 +64,7 @@ Usage
 Initial support is only for apt-based systems.
 
 Add `heroku` to the run list for a node/role.  If you're using a
-package from an apt repo other than the one controlled by heroku, set 
+package from an apt repo other than the one controlled by heroku, set
 `node[:heroku][:distribution]` and `node[:heroku][:components]` as
 needed.
 
@@ -72,7 +72,7 @@ License and Author
 ==================
 
 - Author:: Chris Horton (<hortoncd@gmail.com>)
-- Copyright:: 2013 - 2014, Chris Horton
+- Copyright:: 2013 - 2017, Chris Horton
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

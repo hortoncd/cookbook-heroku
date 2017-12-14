@@ -1,0 +1,23 @@
+version: 2
+jobs:
+  build:
+    machine:
+      image: circleci/classic:latest
+    steps:
+      - checkout
+      - run:
+          name: Bundle Install
+          command: |
+            bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs=4 --retry=3
+      - run:
+          name: Foodcritic
+          command: |
+            bundle exec rake style
+      - run:
+          name: Unit Tests
+          command: |
+            bundle exec rake unit
+      - run:
+          name: Test Kitchen
+          command: |
+            bundle exec rake integration:testkitchen

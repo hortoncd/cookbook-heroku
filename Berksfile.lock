@@ -1,22 +1,10 @@
-{
-  "sources": {
-    "heroku": {
-      "path": "."
-    },
-    "apt": {
-      "locked_version": "2.0.0"
-    },
-    "yum": {
-      "locked_version": "2.3.0"
-    },
-    "minitest-handler": {
-      "locked_version": "0.2.1"
-    },
-    "heroku_test": {
-      "path": "./test/cookbooks/heroku_test"
-    },
-    "chef_handler": {
-      "locked_version": "1.1.4"
-    }
-  }
-}
+DEPENDENCIES
+  apt (>= 2.0.0)
+  heroku
+    path: .
+    metadata: true
+
+GRAPH
+  apt (6.1.4)
+  heroku (0.1.1)
+    apt (>= 2.0.0)
